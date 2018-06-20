@@ -5,6 +5,9 @@ public class Point
     private String name;
     private int pumpType;
     private Location loc;
+    public Point()
+    {}
+
     public Point(String str, int pumpT, Location loc)
     {
         name = str;
@@ -26,4 +29,16 @@ public class Point
     }
 
     public double getLat()  { return loc.getLatitude(); }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setPumpType(int pumpType) {
+        this.pumpType = pumpType;
+    }
+
+    public void setLoc(Location loc) {
+        this.loc = loc;
+    }
 }

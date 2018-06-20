@@ -4,11 +4,16 @@ public class Location
 {
     private double longitude;
     private double latitude;
+    private int pumpType;
 
-    public Location(int longt, int lat)
+    public Location(int longt, int lat, int pumpType)
     {
         longitude = longt;
         latitude = lat;
+        this.pumpType = pumpType;
+    }
+
+    public Location() {
     }
 
     public double getLongitude()
@@ -20,4 +25,9 @@ public class Location
     {
         return latitude;
     }
+
+    public int getPumpType() {
+        return pumpType;
+    }
+
 }
